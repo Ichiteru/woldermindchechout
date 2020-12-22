@@ -3,10 +3,11 @@ package repo;
 import entity.Person;
 import entity.Whore;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WhoreRepo implements Repo {
+public class WhoreRepo implements Repo, Serializable {
     private static WhoreRepo instance;
 
     private final List<Whore> whores;
@@ -15,7 +16,7 @@ public class WhoreRepo implements Repo {
         whores = new ArrayList<>();
     }
 
-    public WhoreRepo getInstance() {
+    public static WhoreRepo getInstance() {
         if (instance == null) {
             instance = new WhoreRepo();
         }

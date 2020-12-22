@@ -10,7 +10,7 @@ public class Whore extends Person {
     }
 
     public void fuck() {
-        System.out.println("FUCKING");
+        System.out.println(this.getAlias() +  " is FUCKING");
     }
 
     public boolean doIWantMore() {
