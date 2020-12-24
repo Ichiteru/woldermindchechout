@@ -1,16 +1,16 @@
 package repo;
 
-import entity.Person;
+
 import entity.Whore;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
+
 
 public class WhoreRepo implements Repo, Serializable {
     private static WhoreRepo instance;
-    private String filePath = "whores.txt";
+    private final String filePath = "whores.txt";
     private List<Whore> whores;
 
     private WhoreRepo() {
