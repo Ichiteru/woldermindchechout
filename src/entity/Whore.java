@@ -1,6 +1,8 @@
 package entity;
 
-public class Whore extends Person {
+import java.io.*;
+
+public class Whore extends Person implements Serializable {
 
     private String alias;
     private double price;
@@ -57,4 +59,11 @@ public class Whore extends Person {
         this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return "Whore{" +
+                "alias='" + alias + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

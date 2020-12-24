@@ -11,5 +11,6 @@ public class Application {
         whoreController.addWhore(currentWhore);
         whoreController.addWhore(currentWhore);
         whoreController.fuckTheWholeHotel();
+        whoreController.showHotel();
     }
 }
