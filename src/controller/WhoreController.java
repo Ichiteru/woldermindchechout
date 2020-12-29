@@ -19,4 +19,9 @@ public class WhoreController {
         whoreService.addWhore(whoreFromMenuInput);
     }
 
+    public void showHotel(){
+        whoreService.show();
+    }
+
+
 }

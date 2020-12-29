@@ -27,4 +27,11 @@ public class WhoreService {
         }
     }
 
+    public void show(){
+        for (Whore whore :
+                repo.getAll()) {
+            System.out.println(whore);
+        }
+    }
+
 }
